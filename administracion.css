@@ -1,0 +1,162 @@
+.panel-header { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.btn-volver-panel { 
+  text-decoration: none; 
+}
+
+.grid-forms { 
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 20px; 
+  margin-bottom: 30px; 
+}
+
+.grid-no-margin { 
+  margin-bottom: 0; 
+}
+
+.card-form { 
+  border: 1px solid #ccc; 
+  padding: 20px; 
+  border-radius: 8px; 
+  background-color: #f9f9f9; 
+}
+
+.card-form h3 { 
+  margin-top: 0; 
+  color: #333; 
+  border-bottom: 2px solid #005C97; 
+  padding-bottom: 5px; 
+}
+
+.card-compra { 
+  margin-bottom: 40px; 
+}
+
+.form-group { 
+  margin-bottom: 15px; 
+}
+
+.form-group label { 
+  display: block; 
+  font-weight: bold; 
+  margin-bottom: 5px; 
+}
+
+.form-group input, 
+.form-group select { 
+  width: 100%; 
+  padding: 8px; 
+  box-sizing: border-box; 
+}
+
+.input-cantidad { 
+  width: 200px; 
+}
+
+.success { 
+  color: green; 
+  font-weight: bold; 
+}
+
+.error { 
+  color: red; 
+  font-weight: bold; 
+}
+
+.btn-accion,
+.btn-registrar { 
+  background-color: #005C97;
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.section-report { 
+  margin-top: 4px; 
+  padding: 15px; 
+  border-radius: 6px; 
+}
+
+.advanced-query-box { 
+  background-color: #e3f2fd; 
+  border-left: 5px solid #2196f3; 
+  padding: 15px; 
+  margin-top: 30px; 
+}
+
+.tabla-blanca { 
+  background-color: white; 
+}
+
+.fila-destacada { 
+  font-weight: bold; 
+}
+
+.texto-azul { 
+  color: #005C97; 
+}
+
+.tabla-cuadrcula {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 35px 0;
+    font-size: 0.95rem;
+    min-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabla-cuadrcula thead tr {
+    background-color: #005C97;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.tabla-cuadrcula th,
+.tabla-cuadrcula td {
+    padding: 14px 18px;
+}
+
+.tabla-cuadrcula tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.tabla-cuadrcula tbody tr:nth-of-type(even) {
+    background-color: #f8f9fa;
+}
+
+.tabla-cuadrcula tbody tr:last-of-type {
+    border-bottom: 3px solid #007bff;
+}
+
+.tabla-cuadrcula tbody tr:hover {
+    background-color: #f1f3f5;
+    cursor: default;
+    transition: background-color 0.15s ease-in-out;
+}
+
+.tabla-cuadrcula td[colspan="4"] {
+    text-align: center;
+    color: #6c757d;
+    font-style: italic;
+    padding: 30px;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}

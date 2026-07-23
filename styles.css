@@ -1,0 +1,270 @@
+.pliant-regular {
+  font-family: "Pliant", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.pliant-bold {
+  font-family: "Pliant", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+body {
+  font-family: "Pliant", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+}
+
+.store-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #005C97;
+  background: -webkit-linear-gradient(to right, #363795, #005C97);
+  background: linear-gradient(to right, #363795, #005C97);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+#cart-status {
+  font-size: 24px;
+}
+
+.search-container {
+  text-align: center;
+  margin: 24px 0;
+}
+
+input {
+  padding: 8px;
+  width: 250px;
+  border: 1px solid #ccc;
+}
+
+.button-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+button {
+  padding: 16px 32px;
+  background: #005C97;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn {
+  width: 90%;
+}
+
+.product-card img {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 10px;
+}    
+
+#product-search {
+  height: 32px;
+  margin-right: 8px;
+  border-radius: 8px;
+}
+
+#clear-btn {
+  background: #6c757d;
+  margin-left: 5px;
+}
+
+#clear-btn:hover {
+  background: #5a6268;
+}
+
+#results-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.product-card {
+  background: white;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: relative;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 0.9em;
+  margin-right: 8px;
+}
+
+.final-price {
+  font-weight: bold;
+  color: #333;
+}
+
+.badge {
+  background: #dc3545;
+  color: white;
+  padding: 2px 6px;
+  font-size: 0.8em;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+.toast {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  background: #333;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.review-card {
+  border: 1px solid #ddd;
+  padding: 16px;
+  margin-top: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.review-card h4 {
+  margin: 0 0 5px 0;
+}
+
+.review-card p {
+  margin: 0;
+  color: #555;
+}
+
+.section-divider {
+  max-width: 800px;
+  margin: 40px auto;
+  border: 0;
+  border-top: 1px dashed #ccc;
+}
+
+.reviews-section {
+  max-width: 600px;
+  margin: 24px auto;
+  padding: 24px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.reviews-section h3 {
+  margin-top: 0;
+}
+
+.review-stars {
+  color: #ffc107;
+}
+
+.reviews-section input[type="text"],
+.reviews-section input[type="number"],
+.reviews-section textarea {
+  width: 98%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.btn-review {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.pedido-container {
+  max-width: 600px;
+  margin: 32px auto;
+  padding: 24px;
+  border: 1px solid #005C97;
+  border-radius: 8px;
+  background-color: #f7f9ff;
+}
+
+.pedido-container h2 {
+  color: #005C97;
+  margin-top: 0;
+}
+
+.pedido-container input[type="text"],
+.pedido-container input[type="number"],
+.pedido-container select,
+.pedido-container textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.pedido-footer {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.btn-pedido {
+  background-color: #005C97;
+  color: white;
+  border: none;
+  padding: 16px 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.cart-button {
+    text-decoration: none;
+    color: inherit;      
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #005C97;
+    border-radius: 20px; 
+    border: 1px solid #d0d7de;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.cart-button:hover {
+  background-color: #41aaf4;
+  transform: scale(1.03);
+  border-color: #007bff;
+}

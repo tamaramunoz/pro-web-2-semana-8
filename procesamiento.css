@@ -1,0 +1,51 @@
+.processor-container {
+  font-family: 'Pliant', Arial, sans-serif;
+  padding: 24px;
+  max-width: 600px;
+  margin: 32px auto;
+  border: 1px solid #28a745;
+  border-radius: 8px;
+  background-color: #f4fbf6;
+}
+
+.processor-title {
+  color: #28a745;
+  margin-top: 0;
+}
+
+.processor-success {
+  background-color: #e2f0d9;
+  padding: 16px;
+  border-radius: 8px;
+  color: #385723;
+  margin: 16px 0;
+}
+
+.processor-error {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.search-match {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.search-no-match {
+ color: #6c757d;
+}
+
+.btn-back {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-back:hover {
+  background-color: #217d36;
+}
