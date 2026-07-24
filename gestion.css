@@ -160,3 +160,21 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
+.db-status-banner {
+  background-color: #e0f2fe;
+  border-left: 5px solid #0284c7;
+  color: #0369a1;
+  padding: 16px 20px;
+  margin: 20px 0;
+  border-radius: 6px;
+  font-family: "Pliant", sans-serif;
+}
+.db-status-banner h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.1rem;
+}
+.db-status-banner p {
+  margin: 0;
+  font-size: 0.95rem;
+}

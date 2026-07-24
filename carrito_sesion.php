@@ -1,8 +1,6 @@
 <?php
-// inicialización del entorno de sesiones en el servidor
 session_start();
 
-// inventario oculto en el backend solo para validar y mapear los IDs al añadir
 $inventario_productos = [
     1 => ["nombre" => "Nintendo Switch 2", "precio" => 485991],
     2 => ["nombre" => "PlayStation 5 Slim", "precio" => 512991],
@@ -14,7 +12,6 @@ $inventario_productos = [
     8 => ["nombre" => "Teclado Redragon", "precio" => 38990]
 ];
 
-// agregar un producto al carrito
 if (isset($_GET['action']) && $_GET['action'] === 'add') {
     $id = (int)$_GET['id'];
     
@@ -37,10 +34,8 @@ if (isset($_GET['action']) && $_GET['action'] === 'add') {
     exit;
 }
 
-// vaciar el carrito de forma segura usando unset()
 if (isset($_GET['action']) && $_GET['action'] === 'clear') {
     if (isset($_SESSION['carrito_tienda'])) {
-      // destrucción selectiva de la variable de sesión
       unset($_SESSION['carrito_tienda']);
     }
     header("Location: carrito_sesion.php");
@@ -99,12 +94,9 @@ if (isset($_GET['action']) && $_GET['action'] === 'clear') {
         </table>
 
         <div class="footer-tabla">
-            <a
-              href="index.php"
-              class="btn-accion btn-volver">⬅ Seguir Comprando</a>
-            <a
-              href="carrito_sesion.php?action=clear"
-              class="btn-accion btn-vaciar">Vaciar Carrito</a>
+            <a href="index.php" class="btn-accion btn-volver">⬅ Seguir Comprando</a>
+            <a href="pago.php" class="btn-accion">Pagar Ahora</a>
+            <a href="carrito_sesion.php?action=clear" class="btn-accion btn-vaciar">Vaciar Carrito</a>
         </div>
     <?php endif; ?>
 

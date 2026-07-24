@@ -15,10 +15,10 @@
     <header class="store-header">
       <h2>Tienda Online</h2>
       <div>
-          <a href="gestion.php" class="btn-accion" style="margin-right: 15px; background-color: #28a745; text-decoration: none;">⚙️ Panel Administración (Semana 6)</a>
+          <a href="gestion.php" class="btn-accion">Panel Administración</a>
           
-          <a href="carrito_sesion.php" id=\"cart-status\" class=\"cart-button\">
-                Carrito: <span id=\"cart-counter\"><?php
+          <a href="carrito_sesion.php" id="cart-status" class="cart-button">
+                Carrito: <span id="cart-counter"><?php
                 echo isset($_SESSION['carrito_tienda']) ? array_sum(array_column($_SESSION['carrito_tienda'], 'cantidad')) : 0;
               ?></span> productos
           </a>
