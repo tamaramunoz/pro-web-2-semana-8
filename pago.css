@@ -1,0 +1,101 @@
+body {
+    font-family: "Pliant", sans-serif;
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.pay-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.badge-secure {
+    background-color: #e6f4ea;
+    color: #137333;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group-flex-2 {
+    flex: 2;
+}
+
+.form-group-flex-1 {
+    flex: 1;
+}
+
+.btn-pay {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.btn-pay-link {
+    text-decoration: none;
+}
+
+.btn-pay:hover {
+    background-color: #218838;
+}
+
+.btn-back {
+    display: inline-block;
+    margin-top: 15px;
+    color: #005C97;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.success-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.success-icon {
+    font-size: 50px;
+    color: #28a745;
+}
