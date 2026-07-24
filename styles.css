@@ -253,9 +253,9 @@ button {
 
 .cart-button {
     text-decoration: none;
-    color: inherit;      
+    color: white;
     display: inline-block;
-    padding: 8px 15px;
+    padding: 8px 16px;
     background-color: #005C97;
     border-radius: 20px; 
     border: 1px solid #d0d7de;
@@ -267,4 +267,10 @@ button {
   background-color: #41aaf4;
   transform: scale(1.03);
   border-color: #007bff;
+}
+
+.btn-accion {
+  color: white;
+  margin-right: 24px;
+  text-decoration: none;
 }

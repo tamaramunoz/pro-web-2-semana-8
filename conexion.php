@@ -1,17 +1,25 @@
 <?php
-// parámetros de configuración
 $host = "localhost";
 $usuario = "root";
 $password = "";
 $basedatos = "TIENDA";
 
-// establecer la conexión utilizando el método mysqli
-$conn = new mysqli($host, $usuario, $password, $basedatos);
+$conn = null;
+$db_connected = false;
 
-// validar la conexión segura
-if ($conn->connect_error) {
-    die("Conexión fallida - ERROR de conexión: " . $conn->connect_error);
+mysqli_report(MYSQLI_REPORT_OFF);
+
+try {
+    $conn = @new mysqli($host, $usuario, $password, $basedatos);
+
+    if ($conn->connect_error) {
+        $db_connected = false;
+        $conn = null;
+    } else {
+        $db_connected = true;
+        $conn->set_charset("utf8");
+    }
+} catch (Throwable $e) {
+    $db_connected = false;
+    $conn = null;
 }
-
-$conn->set_charset("utf8");
-?>
